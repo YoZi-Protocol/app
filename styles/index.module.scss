@@ -1,0 +1,587 @@
+.main-bg {
+  background-image: url('../assets/eos-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.flow-bg {
+  background-image: url('../assets/flow.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px 0 20px;
+}
+.future-bg {
+  background-image: url('../assets/future.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin: 10px 0 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .future-bg {
+    background-image: url('../assets/futureh5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin: 10px 0 20px;
+  }
+}
+
+.nftModalContent {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+  padding: 0 !important;
+  
+  width: 818px;
+  height: 415px;
+
+  //inset: 50% auto auto 50%;
+  //background: rgb(255, 255, 255);
+  position: absolute;
+  //border: 1px solid rgb(204, 204, 204);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+
+  .closeNftModalButton {
+    position: absolute;
+    right: 7%;
+    top: 16%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    background-image: url("../assets/app/nft_modal_close.png");
+  }
+}
+
+.nftModalContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-image: url("../assets/app/mintNftModal.png");
+
+  .nftModalTitle {
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 100%;
+    position: absolute;
+    top: 177px;
+    font-size: 40px;
+    font-family: Roboto-Black, Roboto;
+    font-weight: 900;
+    color: #333333;
+    line-height: 47px;
+
+    span {
+      color:#FF4E00;
+    }
+  }
+
+  .nftModalMintButton {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 252px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 520px;
+    height: 72px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../assets/app/btn_mint@2x.png");
+
+    font-size: 26px;
+    font-family: Roboto-Bold, Roboto;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 30px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    
+  }
+
+  .nftModalDesc {
+    left: 50%;
+    top: 350px;
+    transform: translateX(-50%);
+    position: absolute;
+    font-size: 18px;
+    font-family: Roboto-Bold, Roboto;
+    font-weight: 700;
+    color: #FF4E00;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+}
+
+.container {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content:center;
+  // background-color: #ffffff;
+}
+
+.scaleClick {
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.container {
+  width: 100%;
+
+  .header {
+    //padding-top: 20px;
+    min-width: 1200px;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/new/index-bg@2x.png");
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+
+.inner {
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  //width: 1200px;
+
+  .top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+
+}
+
+.toolTip {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.getEarn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 100px;
+  border: 0.8px solid #FF4E00;
+  background: rgba(255, 78, 0, 0.10);
+  cursor: pointer;
+  letter-spacing: 2px;
+
+  span {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .eth {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+}
+
+.descContainer {
+  display: flex;
+
+  .sayHello {}
+}
+
+.desc {
+  //margin-top: 250px;
+  
+
+  p {
+    //list-style: 1;
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+
+.slogan {
+  // 692 96
+  //margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFF;
+  text-align: center;
+  //font-family: Kanit;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1;
+
+  background-image: url("../assets/new/paveTheWay.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.mintButton {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #000 0%, #524F4E 100%);
+  color: #FFF;
+  text-align: center;
+  //font-family: Kanit;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  
+
+}
+
+.telegram {
+  // background-image: url("../assets/telegram.png");
+}
+
+.discord {
+  background-image: url("../assets/discord.png");
+}
+
+.twitter {
+  background-image: url("../assets/twitter.png");
+}
+
+.medium {
+  background-image: url("../assets/medium.png");
+}
+
+.github {
+  background-image: url("../assets/github.png");
+}
+
+.partner {
+  min-width: 1200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../assets/new/index-footer-bg@2x.png");
+
+  .footer {
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    opacity: 0.20000000298023224;
+  }
+
+  a {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 657px;
+    height: 137px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../assets/new/buildon.png");
+  }
+
+  .partnerInner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .partnersList {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .layerZero {
+    background-image: url("../assets/new/layerZeroNew@2x.png");
+  }
+
+  .zkSync {
+    background-image: url("../assets/new/zkSyncNew@2x.png");
+  }
+
+  .sei {
+    background-image: url("../assets/new/sei.png");
+
+  }
+
+  .linea {
+    background-image: url("../assets/new/linea.png");
+  }
+
+  .scroll {
+    background-image: url("../assets/new/scroll.png");
+
+  }
+
+  .optimism {
+    background-image: url("../assets/new/optimism.png");
+
+  }
+
+  .arb {
+    background-image: url("../assets/new/arb.png");
+
+  }
+
+  .gitcoin {
+    background-image: url("../assets/new/gitcoin.png");
+  }
+}
+
+.modalContent {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+  padding: 0 !important;
+
+  //inset: 50% auto auto 50%;
+  //background: rgb(255, 255, 255);
+  position: absolute;
+  //border: 1px solid rgb(204, 204, 204);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+
+  .successEnd, .login, .skipEnd {
+    border-radius: 21px;
+  }
+
+  .closeButton {
+    position: absolute;
+    right: -8%;
+    top: -4%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../assets/pc_icon_close.png");
+  }
+
+  .login {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // background-image: url("../assets/pc_modal_49$.png");
+  }
+
+  .successEnd {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // background-image: url("../assets/pc_modal_49$_uclock.png");
+  }
+
+  .skipEnd {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // background-image: url("../assets/pc_modal_unlock.png");
+  }
+
+  h3 {
+    color: #343434;
+    //font-family: Kanit;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+
+  p {
+    color: #999695;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.787px;
+  }
+}
+
+.modalButton {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 87.5px;
+  background: linear-gradient(90deg, #000 0%, #4F4D4D 100%);
+  cursor: pointer;
+
+  .buttonInner {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.unLockButton {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 87.5px;
+  background: linear-gradient(89deg, #FF4E00 0%, #FF9327 100%);
+}
+
+.modalButtonSkip {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 87.5px;
+  border: 1.75px solid #FF4E00;
+  background: #FFF;
+  cursor: pointer;
+
+  color: #FF4E00;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.arrow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 11px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  // background-image: url("../assets/pc_icon_arrow.png");
+}
+
+.fontFocus {
+  color: #FF4E00;
+}
+
+.unlocked {
+  color: #343434;
+  font-family: Inter;
+  font-size: 17.5px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+// css
+
+.loaderWrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.70);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  z-index: 99999;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.loader {
+  width: 500px;
+  height: 500px;
+  background-image: url('../assets/new/loading.gif');
+  background-size: cover;
+}
+
+// @keyframes spin {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
